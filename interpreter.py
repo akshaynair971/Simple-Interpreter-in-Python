@@ -12,17 +12,14 @@ def main():
 	num2=(problem[n-1])
 	
 	#finding keywords from list
-	operation=["add","sub","mult","div"]
-	if (add in problem for add in operation):
+	if "add" in problem:
 		add(num1,num2)
-	elif(sub  in problem for add in operation):
+	elif "sub" in problem:
 		sub(num1,num2)
-	elif(mult in problem for add in operation):
+	elif "mult" in problem:
 		mult(num1,num2)
-	elif(div  in problem for add in operation):
+	elif "div" in problem:
 		div(num1,num2)
-		
-		
 		
 def add(num1,num2):
 	print(int(num1)+int(num2))
